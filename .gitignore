@@ -1,0 +1,6 @@
+# Ignore Vivado Log Files
+*.jou
+*.log
+
+# Ignore Run Dirs
+*/run
