@@ -19,10 +19,13 @@
 `timescale 1ns/10ps
 
 module sr_latch_metastable_wrapper (
-  input wire ref_clk_in
+  input  wire       ref_clk_in,
+  output wire [2:0] LED
 );
 
   logic [2:0] cnt;
+
+  assign LED = cnt;
 
   always_ff @(posedge ref_clk_in) begin
     cnt <= cnt + 1;

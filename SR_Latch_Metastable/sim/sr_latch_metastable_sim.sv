@@ -31,7 +31,8 @@ module sr_latch_metastable_sim ();
   always #(clk_period/2) clk_sim = ~clk_sim;
 
   sr_latch_metastable_wrapper dut (
-    .ref_clk_in (clk_sim)
+    .ref_clk_in (clk_sim),
+    .LED        (       )
   );
 
 
